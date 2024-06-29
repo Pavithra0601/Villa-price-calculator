@@ -1,0 +1,188 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Adjust the blur amount as needed */
+    color:purple;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom : 1px solid white;
+}
+
+/* Animation keyframes for fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Style the header content */
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Style the logo */
+.logo {
+    max-width: 120px; /* Adjust the maximum width of your logo */
+    margin-right: 10px; /* Add margin to create space between logo and text */
+}
+.header-link {
+    color: #fff; /* Adjust link text color as needed */
+    text-decoration: none; /* Remove underlines from the link */
+}
+.header-text-container {
+    flex: 1; /* Allow the container to grow and take available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the "Villa Price Calculator" text */
+.header-text {
+    font-size: 25px;
+    flex-grow: 1;
+    text-align: center;
+    margin-right: 20px; /* Adjust margin to center the text */
+}
+/* Style form labels within a container */
+.container  {
+    font-weight: bold;
+    color: #555; /* Set label text color */
+    font-size: 16px; /* Set label font size */
+    margin-bottom: 10px; /* Add margin to the bottom of labels */
+    border-bottom-color: 2px solid teal;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* Style the main container */
+.main-container {
+    margin-top: 20px;
+    padding: 20px; /* Add padding to the main container */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    /*background: linear-gradient(45deg, #e0e0e0, #f0f0f0); subtle gradient background*/
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    backdrop-filter: blur(12px); /* Adjust the blur amount as needed */
+    color: #333;
+    background-size:  cover;
+    background-position:top right;
+    border:1px solid white;
+    
+  
+}
+
+.main-container:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+/*    background:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));*/
+}
+
+/* Style the form */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Style form inputs and labels */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+        color: black; /* Text color for labels */
+}
+
+.form-control {
+    width: 100%; /* Set the width of form controls to 100% */
+    padding: 10px;
+    margin-bottom: 10px; /* Reduce margin between form controls */
+    border: 1px solid #ccc; /* Border color for form elements */
+    border-radius: 4px;
+}
+
+/* Style the submit button */
+.btn-primary {
+    background-color: #370637;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Media query for responsiveness */
+/*@media (max-width: 768px) {
+    .container {
+        max-width: 90%;  Adjust container width for smaller screens 
+    }
+}*/
+/* Style the form-select class (select elements) */
+.form-select {
+    width: 100%; /* Set the width to 100% to make it expand to the container's width */
+    padding: 5px; /* Add padding to the select box */
+    border: 1px solid black; /* Add a border to the select box */
+    border-radius: 4px; /* Add rounded corners to the select box */
+    background-color: #fff; /* Set the background color */
+    color: #333; /* Set the text color */
+    font-size: 16px; /* Set the font size */
+}
+
+/* Style the hover effect on select elements (optional) */
+.form-select:hover {
+    border-color: darkblue; /* Change the border color on hover */
+}
+.slide-in-left {
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+}
+
+.slide-in-left.active {
+    transform: translateX(0);
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Apply the animation to the text element */
+.blinking-text {
+    animation: blink 4s; /* Adjust the animation duration as needed */
+}
+.foc:focus {
+            border: 2px solid green; /* Change the border color to blue when in focus */
+            outline: none; /* Remove the default focus outline (if you don't want it) */
+        }
+        .bg-image {
+           background: url('image/ba1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position:center bottom;
+            /*background-color: rgba(255, 255, 255, 0.5);*/
+            height: 120vh; /* Set the height to the viewport height for full-screen image */
+        }
+             @media screen and (max-width: 768px) {
+    height: 150vh; /* Adjust the height for smaller screens */
+  }
+
+  /* Add more media queries and adjust the styles as needed for different screen sizes */
+  @media screen and (max-width: 480px) {
+    height: 150vh; /* Adjust the height for even smaller screens */
+  }
+        

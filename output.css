@@ -1,0 +1,167 @@
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 20px; /* Adjust padding as needed */
+                background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+                backdrop-filter: blur(10px); /* Adjust the blur amount as needed */
+                color:purple;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                border-bottom : 1px solid white;
+                }
+            body{
+                background-image:url('image/ba1.jpg');
+                background-size:  cover;
+                background-repeat: no-repeat;
+                background-position:center top;
+                /*background-color: rgba(255, 255, 255, 0.5);*/
+                }
+
+
+                .header-content {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0 10px;
+                }
+                .header-text {
+                    flex-grow: 1;
+                    text-align: center;
+                    margin-right: 20px; /* Adjust margin to center the text */
+                }
+                @keyframes blink {
+                    0% { opacity: 1; }
+                    50% { opacity: 0; }
+                    100% { opacity: 1; }
+                }
+
+                /* Apply the animation to the text element */
+                .blinking-text {
+                    animation: blink 3s infinite; /* Adjust the animation duration as needed */
+                }
+
+                     .logo {
+                        width: 125px;
+                        height: auto;
+                        border: 1px solid white;
+                        box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.3);
+                        margin-right: -15px;  
+                        border-radius: 50%;
+                        }
+
+                .container {
+                            /*background: url('.jpg');*/
+                            /*background-color: #ffffff;*/
+                            padding: 30px;
+                            border-radius: 10px;
+                            box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+                            margin: 20px auto;
+                            max-width: 800px;
+                        }
+                        
+                        
+                      body, table {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Apply a nice background color */
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Center the table on the page */
+        .table-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Style the table */
+        table {
+            width: 80%;
+            max-width: 800px;
+            border-collapse: collapse;
+           border: #2px solid red;
+            border-radius: 40px;
+            overflow: hidden;
+            
+            box-shadow: 0 4px 6px floralwhite;
+            /*transform: translateX(-100%);  Initially off-screen to the left */
+            /*animation: slideIn 1s ease-in-out forwards;  Apply slide-in animation */
+        }
+
+        /* Style the table header */
+        th {
+            background-color: #343a40;
+            color: white;
+            font-weight: bold;
+            padding: 15px;
+            text-align: left;
+            border: 1px solid black;
+        }
+
+        /* Style the table cells */
+        td, th {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            border: 1px solid black;
+        }
+
+        /* Define alternating row colors */
+        tr:nth-child(even) {
+            background-color: white;
+            border: 1px solid black;
+        }
+        tr:nth-child(odd) {
+            background-color: white;
+            border: 1px solid black;
+        }
+        /* Style the table header for narrow screens */
+        @media screen and (max-width: 600px) {
+            th {
+                font-size: 14px;
+            }
+        }
+
+        /* Keyframes for the slide-in animation */
+/*        @keyframes slideIn {
+            to {
+                transform: translateX(0);
+            }
+        }         */
+p{
+            color:black;
+            font-size: 30px;  
+        }
+        p:hover {
+    font-size: 32px;  
+}
+.page-break {
+    page-break-after: always;
+}
+
+@media print {
+   .page-break {
+      page-break-after: always;
+   }
+}
+.page {
+    page-break-after: always;
+}
+.hidden-on-webpage {
+  display: none;
+}
+/*.bg-image {
+           background: url('image/ba1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position:center bottom;
+            background-color: rgba(255, 255, 255, 0.5);
+            height: 120vh;  Set the height to the viewport height for full-screen image 
+        }*/
